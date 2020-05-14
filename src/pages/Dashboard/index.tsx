@@ -101,7 +101,7 @@ const Dashboard: React.FC = () => {
                     : `- ${formatValue(transaction.value)}`;
 
                 return (
-                  <tr>
+                  <tr key={transaction.id}>
                     <td className="title">{transaction.title}</td>
                     <td className={classNameType}>{valueType}</td>
                     <td>{transaction.category.title}</td>
